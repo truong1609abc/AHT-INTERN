@@ -1,0 +1,79 @@
+body {
+    margin : 0;
+    padding: 0;
+
+}
+
+a {
+    color          : #000;
+    text-decoration: #000;
+
+    &:hover {
+        color          : #000;
+        text-decoration: underline;
+    }
+}
+
+ul {
+    margin : 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+input {
+    padding: 0;
+}
+
+// ============ Grid layout
+.container {
+    max-width : 1170px;
+    width     : 100%;
+    padding   : 0 15px;
+    margin    : 0 auto;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    width     : 100%;
+    padding   : 0 30px;
+    box-sizing: border-box;
+}
+
+.row {
+    display  : flex;
+    flex-wrap: wrap;
+    margin   : 0 -15px;
+}
+
+.dropdown {
+    &:hover {
+        .dropdown-content {
+            display: block;
+        }
+    }
+
+    &-btn {
+        &::after {
+            padding-left: 15px;
+            content     : url('../img/caret-down.png');
+        }
+    }
+
+    &-content {
+        display         : none;
+        position        : absolute;
+        background-color: $bg-header;
+    }
+}
+
+body {
+    font-size  : 16px;
+    line-height: 1;
+    color      : $main-color;
+    max-width  : 1920px;
+    margin     : 0 auto;
+    font-family: 'Montserrat';
+}

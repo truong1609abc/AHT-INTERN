@@ -1,0 +1,318 @@
+.logo-mobile {
+    .container-fluid {
+        .logo-mobile-1 {
+            width      : 196px;
+            height     : 36px;
+            line-height: 36px;
+            text-align : center;
+            border     : 2px solid $color-logo;
+
+            margin : 0 auto;
+            display: none;
+
+            span {
+
+                padding-left  : 17px;
+                color         : $color-logo;
+                font-family   : 'Montserrat';
+                font-weight   : 700;
+                letter-spacing: 0.73em;
+                font-size     : 20px;
+            }
+
+        }
+    }
+}
+
+.header-mobile {
+    display: none;
+
+    .container-fluid {
+        background-color: $bg-header;
+        color           : #525252;
+
+        .main-header {
+            @include flex();
+            padding: 5px 0 5px 0;
+
+            box-sizing: border-box;
+
+
+            .header-left {
+                display    : flex;
+                align-items: center;
+
+                .header-welcome-icon {
+                    font-size     : 14px;
+                    vertical-align: middle;
+                }
+
+                .header-welcome-text {
+                    font-family   : 'Open Sans';
+                    font-weight   : 400;
+                    letter-spacing: 0.014em;
+                    margin-left   : 2px;
+                    font-size     : 14px;
+                    margin-left   : 5px;
+                }
+
+            }
+
+            .header-mobile-right {
+                display    : flex;
+                align-items: center;
+
+                &-item {
+                    display    : flex;
+                    align-items: center;
+                    margin     : 0 15px;
+
+
+                    &-icon {
+
+                        i {
+                            margin-right  : 6px;
+                            vertical-align: bottom;
+                            font-size     : 14px;
+
+                        }
+
+                    }
+
+                    &-text {
+
+                        font-family: 'Open Sans';
+                        font-weight: 400;
+                        font-size  : 14px;
+                        display    : none;
+                    }
+
+                    &-text:last-child {
+                        padding-left: 15px;
+                    }
+                }
+
+                &-item:last-child {
+                    margin-right: 0px;
+
+                }
+
+
+
+
+            }
+        }
+
+
+    }
+
+}
+
+.header {
+
+    .container-fluid {
+        background-color: $bg-header;
+        color           : #525252;
+
+        .main-header {
+            @include flex();
+            padding: 15px 0 15px 0;
+
+            box-sizing: border-box;
+
+
+            .header-left {
+                display    : flex;
+                align-items: center;
+
+                .header-welcome-icon {
+                    font-size     : 14px;
+                    vertical-align: middle;
+                }
+
+                .header-welcome-text {
+                    font-family   : 'Open Sans';
+                    font-weight   : 400;
+                    letter-spacing: 0.014em;
+                    margin-left   : 2px;
+                    font-size     : 14px;
+                    margin-left   : 5px;
+                }
+
+            }
+
+            .header-right {
+                display    : flex;
+                align-items: center;
+
+                &-item {
+                    display    : flex;
+                    align-items: center;
+                    margin     : 0 15px;
+
+
+                    &-icon {
+
+                        i {
+                            margin-right  : 6px;
+                            vertical-align: bottom;
+                            font-size     : 14px;
+                        }
+
+                    }
+
+                    &-text {
+                        font-family: 'Open Sans';
+                        font-weight: 400;
+                        font-size  : 14px;
+
+
+                    }
+                }
+
+                &-item:last-child {
+                    margin-right: 0px;
+                }
+
+
+
+
+            }
+        }
+
+
+    }
+
+}
+
+.menu {
+    padding      : 20px 0 19px 0;
+    border-bottom: 1px solid $border-bottom;
+
+    .container-fluid {
+        .navbar {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+
+            &-left {
+                width      : 196px;
+                height     : 36px;
+                line-height: 36px;
+                text-align : center;
+                border     : 2px solid $color-logo;
+
+                &-logo {
+                    span {
+                        padding-left  : 17px;
+                        color         : $color-logo;
+                        font-family   : 'Montserrat';
+                        font-weight   : 700;
+                        letter-spacing: 0.73em;
+                        font-size     : 20px;
+                    }
+                }
+            }
+
+            &-center {
+                .menu-bar {
+                    &-inner {
+                        display        : flex;
+                        justify-content: space-between;
+
+                        nav {
+                            .navbar {
+                                .nav-title {
+                                    display         : none;
+                                    background-color: $bg-header;
+                                    color           : white;
+                                    line-height     : 80px;
+                                    text-transform  : uppercase;
+                                    font-size       : 30px;
+                                    font-weight     : 600;
+                                    padding         : 0 15px;
+                                }
+
+                                .nav-item {
+                                    margin-left : 27px;
+                                    margin-right: 28px;
+                                    display     : inline-block;
+
+
+                                    a {
+
+                                        text-transform: uppercase;
+                                        color         : $color-logo;
+                                        font-family   : 'Montserrat';
+                                        font-weight   : 700;
+                                        font-size     : 14px;
+
+
+
+
+
+
+                                        i {
+                                            color: $color-logo;
+
+
+                                            &:hover {
+                                                color          : $color-menu;
+                                                text-decoration: none;
+                                                transition     : all 0.5s;
+                                            }
+                                        }
+
+                                        &:hover {
+                                            color          : $color-menu;
+                                            text-decoration: underline;
+                                            transition     : all 0.5s;
+                                        }
+                                    }
+
+
+
+                                }
+
+                                .nav-item:last-child {
+                                    margin-right: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            &-right {
+                display        : flex;
+                justify-content: space-between;
+                align-items    : center;
+
+                &-icon {
+                    margin-left: 30px;
+
+
+                    i {
+                        margin-right  : 30px;
+                        color         : $color-logo;
+                        font-size     : 22px;
+                        line-height   : 22px;
+                        vertical-align: middle;
+
+                    }
+
+                    i:last-child {
+                        margin-right: 0px;
+                    }
+                }
+
+
+
+                #nav-icon {
+                    display: none;
+                }
+            }
+        }
+    }
+}
