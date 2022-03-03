@@ -13,15 +13,15 @@ $(document).ready(function () {
             {
                 breakpoint: 1025,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 },
             },
             {
-                breakpoint: 480,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
-                    arrows: false,
-                    infinite: false,
+                    arrows: true,
+                    infinite: true,
                 },
             },
         ],
@@ -40,6 +40,7 @@ $(document).ready(function () {
         e.preventDefault();
         $('.navbar').removeClass('active');
     });
+
 
 
 
