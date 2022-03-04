@@ -204,8 +204,9 @@
 
                 &-logo {
                     span {
-                        padding-left  : 17px;
-                        color         : $color-logo;
+                        padding-left: 17px;
+                        color       : $color-logo;
+
                         font-family   : 'Montserrat';
                         font-weight   : 700;
                         letter-spacing: 0.73em;
@@ -219,6 +220,7 @@
                     &-inner {
                         display        : flex;
                         justify-content: space-between;
+                        margin-top     : -4px;
 
                         nav {
                             .navbar {
@@ -234,8 +236,8 @@
                                 }
 
                                 .nav-item {
-                                    margin-left : 27px;
-                                    margin-right: 28px;
+                                    margin-left : 28px;
+                                    margin-right: 27px;
                                     display     : inline-block;
 
 

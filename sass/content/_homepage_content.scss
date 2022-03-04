@@ -71,11 +71,12 @@
                 text-align: center;
 
                 .title-special {
-                    font-size    : 30px;
-                    color        : #000000;
-                    font-weight  : 900;
-                    font-family  : "Pacifico";
+                    font-size: 30px;
+                    color    : #000000;
+
                     margin-bottom: 15px;
+                    font-family  : 'Pacifico';
+                    font-weight  : 700;
 
                 }
 
@@ -140,15 +141,18 @@
                     margin-left: 27px;
 
                     .title-top {
-                        margin-top: 13px;
+                        margin-top    : 13px;
+                        letter-spacing: 3px;
+                        font-weight   : 500;
 
                     }
 
 
                     .title-bot {
-                        margin-top : 3px;
+                        padding-top: 4px;
                         font-size  : 20px;
-                        font-weight: 600;
+                        font-weight: 700;
+
 
                     }
                 }
@@ -158,13 +162,14 @@
                     margin-left: 9px;
 
                     .title-top {
-                        font-weight: 900;
+                        letter-spacing: 3px;
+                        font-weight   : 500;
                     }
 
                     .title-bot {
-                        margin-top : 4px;
+                        padding-top: 4px;
                         font-size  : 20px;
-                        font-weight: 600;
+                        font-weight: 700;
                     }
 
                     .shop-now-left {
@@ -233,7 +238,7 @@
             display        : flex;
             justify-content: center;
             align-content  : center;
-            min-height     : 100vh;
+
 
             .list-item {
                 position             : relative;
@@ -241,7 +246,7 @@
                 display              : grid;
                 grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
                 grid-gap             : 30px;
-                grid-row-gap         : 10px;
+                grid-row-gap         : 25px;
 
                 .card {
                     width     : 100%;
@@ -364,27 +369,29 @@
     }
 
     .slider {
-        margin-top: 40px;
+        margin-top: 56px;
 
 
         .container-fluid {
             background-image : url('../../img/slider.png');
             background-repeat: no-repeat;
             background-size  : cover;
-            height           : 700px;
+            background-color : red;
+            height           : 708px;
             width            : 100%;
         }
 
         .main-slider {
             .container {
                 .content {
-                    padding-top: 80px;
+                    padding-top: 67px;
                     text-align : center;
 
 
                     .firts-content {
+                        margin        : 13px 0px 13px 10px;
                         font-size     : 13px;
-                        letter-spacing: 6px;
+                        letter-spacing: 0.4em;
                         color         : #8262b5;
                         font-weight   : 700;
                         font-family   : "Montserrat";
@@ -393,6 +400,7 @@
                     }
 
                     .second-content {
+                        margin        : 7px 0px 0px 0px;
                         font-size     : 24px;
                         letter-spacing: 2px;
                         color         : #000000;
@@ -403,18 +411,16 @@
                     }
 
                     hr {
-
-                        width : 50px;
-                        border: 1px solid #8262b5;
+                        margin-top: 25px;
+                        width     : 50px;
+                        border    : 1px solid #8262b5;
                     }
                 }
 
                 .slider {
-
+                    margin-top: 50px;
 
                     .list-item-slider {
-
-
                         .item {
                             width : 360px;
                             height: 389px;
@@ -437,7 +443,7 @@
                                     background-color: #A1D1DD;
 
                                     top : 21px;
-                                    left: 15px;
+                                    left: 19px;
 
                                     &-content {
                                         border-top   : 1px solid white;
@@ -464,11 +470,12 @@
                                             }
 
                                             .bot {
-                                                font-size  : 14px;
+                                                margin-top : 0px;
+                                                font-size  : 15px;
                                                 color      : #ffffff;
                                                 font-weight: 700;
                                                 font-family: "Montserrat";
-                                                margin     : 6px 0px 0px 0px;
+                                                margin     : 4px 0px 0px 0px;
 
 
                                             }
@@ -482,23 +489,28 @@
 
 
                             .content-slider {
-                                padding-top     : 20px;
+                                padding-top     : 18px;
                                 background-color: #fff;
                                 height          : 189px;
 
 
                                 .text {
-                                    margin-left: 10px;
+                                    margin-left: 20px;
 
                                     .title {
-
+                                        font-size  : 16px;
                                         color      : #000000;
-                                        font-weight: 600;
+                                        font-weight: 400;
                                         font-family: "Montserrat";
+                                        cursor     : pointer;
+
+                                        &:hover {
+                                            color: #8262b5;
+                                        }
                                     }
 
                                     .content-center {
-                                        margin-top : 25px;
+                                        margin-top : 20px;
                                         font-size  : 14px;
                                         line-height: 22px;
                                         color      : #424242;
@@ -506,20 +518,24 @@
                                         font-family: "Open Sans";
                                     }
 
-                                    .bottom {
-                                        margin-top : 30px;
-                                        font-size  : 14px;
-                                        line-height: 22px;
-                                        color      : #c0c0c0;
-                                        display    : flex;
 
-                                        span {
-                                            margin-left: 5px;
-                                        }
+                                }
 
-                                        .comment {
-                                            margin-left: 12px;
-                                        }
+                                .bottom {
+                                    margin-top : 14.5px;
+                                    font-size  : 14px;
+                                    line-height: 22px;
+                                    color      : #c0c0c0;
+                                    display    : flex;
+                                    border-top : 0.5px solid $summary-color;
+                                    padding    : 15px 0px 15px 20px;
+
+                                    span {
+                                        margin-left: 5px;
+                                    }
+
+                                    .comment {
+                                        margin-left: 28px;
                                     }
                                 }
 
@@ -576,26 +592,38 @@
 
         .slick-dots {
             position       : absolute;
-            bottom         : -30px;
+            bottom         : -50px;
             left           : 50%;
             transform      : translate(-50%, 0);
-            display        : flex !important;
+            display        : flex;
             align-items    : center;
             justify-content: center;
-            gap            : 0 20px;
+            gap            : 0 -5px;
         }
 
         .slick-dots button {
             font-size       : 0;
-            width           : 15px;
-            height          : 15px;
+            width           : 13px;
+            height          : 13px;
             border-radius   : 100rem;
-            background-color: #eee;
+            background-color: #8262b5;
+            opacity         : 0.5;
             border          : none;
             outline         : none;
             transition      : all 0.2s linear;
-            color           : red;
         }
+
+        .slick-active button {
+            background-color: #8262b5;
+            opacity         : 1;
+        }
+
+        .slick-dots li button:before {
+            display: none;
+        }
+
+
+
 
 
     }
