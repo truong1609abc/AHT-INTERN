@@ -1,41 +1,41 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat/static/Montserrat-SemiBold.ttf") format("truetype");
+  src: url("../fonts/Montserrat/static/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat/static/Montserrat-Medium.ttf") format("truetype");
+  src: url("../fonts/Montserrat/static/Montserrat-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+  src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat/static/Montserrat-Thin.ttf") format("truetype");
+  src: url("../fonts/Montserrat/static/Montserrat-Thin.ttf") format("truetype");
   font-weight: 100;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  src: url("../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Pacifico";
-  src: url("../../fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
+  src: url("../fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -102,7 +102,6 @@ body {
   font-size: 16px;
   line-height: 1;
   color: #FFFFFF;
-  max-width: 1920px;
   margin: 0 auto;
   font-family: "Montserrat";
 }
@@ -288,14 +287,16 @@ body {
   color: #000000;
 }
 .menu .container-fluid .navbar-center .menu-bar-inner nav .navbar .nav-item a i:hover {
-  color: #8262b5;
   text-decoration: none;
   transition: all 0.5s;
 }
 .menu .container-fluid .navbar-center .menu-bar-inner nav .navbar .nav-item a:hover {
-  color: #8262b5;
+  color: red;
   text-decoration: underline;
   transition: all 0.5s;
+}
+.menu .container-fluid .navbar-center .menu-bar-inner nav .navbar .nav-item .active {
+  color: #8262b5;
 }
 .menu .container-fluid .navbar-center .menu-bar-inner nav .navbar .nav-item:nth-child(2) {
   margin-left: 200px;
@@ -367,7 +368,6 @@ body {
 }
 .main-content .banner-left {
   padding: 0 -15px;
-  height: 560px;
   width: 66.7%;
   padding: 0 15px;
   margin: 15px 0;
@@ -377,7 +377,6 @@ body {
 .main-content .banner-left .banner-inner {
   cursor: pointer;
   overflow: hidden;
-  height: 100%;
 }
 .main-content .banner-left .banner-inner:hover img {
   transform: scale(1.1);
@@ -399,7 +398,7 @@ body {
 .main-content .banner-left-detail {
   position: absolute;
   left: 65.6%;
-  bottom: 153px;
+  bottom: 30%;
   width: 100%;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
@@ -424,7 +423,6 @@ body {
   padding: 0 15px;
   margin: 15px 0;
   box-sizing: border-box;
-  height: 560px;
 }
 .main-content .banner-right-item {
   position: relative;
@@ -448,6 +446,7 @@ body {
   -ms-transition: all, 0.5s;
   -o-transition: all, 0.5s;
   display: block;
+  width: 100%;
 }
 .main-content .banner-right-item:last-child {
   padding: 12px 0;
@@ -567,17 +566,18 @@ body {
   height: 40px;
   position: absolute;
   background-color: #fff;
-  bottom: 10px;
-  left: 10px;
+  bottom: 5px;
+  left: 5px;
   cursor: pointer;
-  transition: 1s;
-  transform: translateY(60px);
+  transition: 0.5s;
   font-size: 12px;
-  line-height: 40px;
+  line-height: 42px;
+  letter-spacing: -0.07em;
   text-align: center;
   color: #424242;
   font-weight: 600;
   font-family: "Montserrat";
+  text-transform: uppercase;
 }
 .main-content .listing .main-listing .list-item .card .imgBx .add-cart:hover {
   color: #664c91;
@@ -585,7 +585,6 @@ body {
 }
 .main-content .listing .main-listing .list-item .card:hover {
   transition: all 0.5s;
-  box-shadow: 10px 10px 6px -2px #bbbbbb;
 }
 .main-content .listing .main-listing .list-item .card:hover .imgBx img {
   transform: scale(1.1);
@@ -634,10 +633,8 @@ body {
   margin-top: 56px;
 }
 .main-content .slider .container-fluid {
-  background-image: url("../../img/slider.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: red;
   height: 708px;
   width: 100%;
 }
@@ -732,7 +729,7 @@ body {
 .main-content .slider .main-slider .container .slider .list-item-slider .item .content-slider .text .title {
   font-size: 16px;
   color: #000000;
-  font-weight: 400;
+  font-weight: 900;
   font-family: "Montserrat";
   cursor: pointer;
 }
@@ -921,6 +918,10 @@ body {
 .footer-main .row .contact ul li span {
   margin-left: 10px;
   line-height: 33px;
+  font-size: 14px;
+}
+.footer-main .row .contact-group .contact-info .info-bot {
+  padding-left: 20px;
 }
 .footer-copyright {
   padding: 19px 0 22px 0px;
@@ -1006,6 +1007,14 @@ body {
     display: inline;
   }
 }
+@media all and (max-width: 1160px) {
+  .footer-main .row .contact-group .contact-info .info-bot {
+    padding-left: 20px;
+  }
+  .footer-main .row .contact-group .contact-info span {
+    font-size: 10px;
+  }
+}
 @media all and (max-width: 1024px) {
   .footer .container {
     margin: 0;
@@ -1038,6 +1047,13 @@ body {
     width: 100%;
     margin-left: 0px;
   }
+  .footer .footer-main-group .contact-group .contact-info .info-bot {
+    padding-left: 0px;
+    font-size: 14px;
+  }
+  .footer .footer-main-group .contact-group .contact-info span {
+    font-size: 14px;
+  }
   .footer .footer-copyright {
     padding: 30px 0;
   }
@@ -1065,7 +1081,7 @@ body {
   }
   .main-content .banner-left-detail {
     width: 50%;
-    left: 72%;
+    left: 66%;
   }
   .main-content .banner-right {
     width: 100%;
@@ -1102,6 +1118,9 @@ body {
     -moz-transform: translateY(-45%);
     -ms-transform: translateY(-45%);
     -o-transform: translateY(-45%);
+  }
+  .main-content .listing {
+    margin-top: 200px;
   }
   .main-content .listing .content .title-top {
     text-align: center;
@@ -1229,13 +1248,6 @@ body {
     display: inline;
   }
 
-  .main-content .banner-left-detail {
-    left: 65%;
-  }
-  .main-content .banner-left-detail .title-special {
-    font-size: 25px;
-  }
-
   .footer .container .footer-inner .row {
     margin: 0px 0px;
   }
@@ -1267,7 +1279,28 @@ body {
     margin-top: 20px;
   }
 }
+@media all and (max-width: 633px) {
+  .main-content .banner-left-detail {
+    left: 70%;
+    bottom: 20%;
+  }
+  .main-content .banner-left-detail .title-special {
+    font-size: 20px;
+  }
+  .main-content .banner-left-detail .button .shop-now {
+    width: 106px;
+    margin-left: 35%;
+  }
+}
 @media all and (max-width: 610px) {
+  .maint-content .listing .main-listing .list-item .card .imgBx img {
+    object-fit: none;
+  }
+  .maint-content .banner-left img {
+    width: 100%;
+    object-fit: scale-down;
+  }
+
   .footer .container .footer-inner .row {
     margin: 0px 0px;
   }
@@ -1411,7 +1444,8 @@ body {
     margin: -18px 0;
   }
   .main-content .banner-left-detail {
-    left: 65%;
+    left: 70%;
+    bottom: 20%;
   }
   .main-content .banner-left-detail .title-special {
     font-size: 15px;
@@ -1422,6 +1456,9 @@ body {
   }
   .main-content .banner-right-item {
     width: 100%;
+  }
+  .main-content .banner-right-item img {
+    height: 100%;
   }
   .main-content .banner-right-item:first-child {
     padding: 0px 0px 0px 0px;
@@ -1439,7 +1476,6 @@ body {
   }
   .main-content .listing .content .title-top {
     text-align: center;
-    margin-top: 200px;
   }
   .main-content .listing .content .title-bot-content {
     text-align: center;
@@ -1447,8 +1483,25 @@ body {
   .main-content .listing .content hr {
     display: none;
   }
+  .main-content .listing .main-listing .list-item .card .imgBx img {
+    object-fit: revert;
+  }
 }
 @media all and (max-width: 376px) {
+  .main-content .banner .banner-col {
+    margin: -18px 0;
+  }
+  .main-content .banner-left-detail {
+    left: 65%;
+  }
+  .main-content .banner-left-detail .title-special {
+    font-size: 15px;
+  }
+  .main-content .banner-left-detail .button .shop-now {
+    width: 106px;
+    margin-left: 35%;
+  }
+
   .footer .footer-copyright {
     padding: 30px 0;
     font-size: 12px;

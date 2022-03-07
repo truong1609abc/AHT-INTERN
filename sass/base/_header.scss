@@ -241,7 +241,6 @@
                                     display     : inline-block;
 
                                     a {
-
                                         text-transform: uppercase;
                                         color         : $color-logo;
                                         font-family   : 'Montserrat';
@@ -254,17 +253,22 @@
 
 
                                             &:hover {
-                                                color          : $color-menu;
                                                 text-decoration: none;
                                                 transition     : all 0.5s;
                                             }
                                         }
 
                                         &:hover {
-                                            color          : $color-menu;
+                                            color          : red;
                                             text-decoration: underline;
                                             transition     : all 0.5s;
                                         }
+
+
+                                    }
+
+                                    .active {
+                                        color: $color-menu;
                                     }
 
                                 }

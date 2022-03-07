@@ -78,6 +78,31 @@
 
 @media all and (max-width:1200px) {}
 
+
+@media all and (max-width:1160px) {
+    .footer {
+        &-main {
+            .row {
+                .contact {
+                    &-group {
+                        .contact-info {
+                            .info-bot {
+                                padding-left: 20px;
+
+                            }
+
+                            span {
+                                font-size: 10px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media all and (max-width:1024px) {
     .footer {
 
@@ -117,6 +142,19 @@
             .contact {
                 width      : 100%;
                 margin-left: 0px;
+
+                &-group {
+                    .contact-info {
+                        .info-bot {
+                            padding-left: 0px;
+                            font-size   : 14px;
+                        }
+
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
             }
         }
 
@@ -161,7 +199,7 @@
 
                 &-detail {
                     width: 50%;
-                    left : 72%;
+                    left : 66%;
 
 
 
@@ -225,6 +263,8 @@
         }
 
         .listing {
+            margin-top: 200px;
+
             .content {
 
 
@@ -418,19 +458,7 @@
         }
     }
 
-    .main-content {
-        .banner {
-            &-left {
-                &-detail {
-                    left: 65%;
 
-                    .title-special {
-                        font-size: 25px;
-                    }
-                }
-            }
-        }
-    }
 
     .footer {
         .container {
@@ -481,11 +509,66 @@
 
 }
 
+@media all and (max-width:633px) {
+    .main-content {
+        .banner {
+            .banner-col {}
+
+            &-left {
+                &-detail {
+                    left  : 70%;
+                    bottom: 20%;
+
+                    .title-special {
+                        font-size: 20px;
+                    }
+
+                    .button {
+                        .shop-now {
+                            width      : 106px;
+                            margin-left: 35%
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+    }
+
+
+}
+
+
 @media all and (max-width:610px) {
+
+    .maint-content {
+        .listing {
+            .main-listing {
+                .list-item {
+                    .card {
+                        .imgBx {
+                            img {
+                                object-fit: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .banner {
+            &-left {
+                img {
+                    width     : 100%;
+                    object-fit: scale-down;
+                }
+            }
+        }
+    }
+
     .footer {
-
-
-
         .container {
 
 
@@ -724,11 +807,10 @@
                 margin: -18px 0;
             }
 
-
-
             &-left {
                 &-detail {
-                    left: 65%;
+                    left  : 70%;
+                    bottom: 20%;
 
                     .title-special {
                         font-size: 15px;
@@ -752,6 +834,10 @@
                 &-item {
                     width: 100%;
 
+                    img {
+                        height: 100%;
+
+                    }
 
                     &:first-child {
                         padding: 0px 0px 0px 0px;
@@ -779,12 +865,13 @@
         }
 
         .listing {
+
+
             .content {
 
 
                 .title-top {
                     text-align: center;
-                    margin-top: 200px;
                 }
 
                 .title-bot-content {
@@ -795,13 +882,55 @@
                     display: none;
                 }
             }
+
+            .main-listing {
+                .list-item {
+                    .card {
+                        .imgBx {
+                            img {
+                                object-fit: revert;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
+
+
+
 
 }
 
 
 @media all and (max-width:376px) {
+    .main-content {
+        .banner {
+            .banner-col {
+                margin: -18px 0;
+            }
+
+            &-left {
+                &-detail {
+                    left: 65%;
+
+                    .title-special {
+                        font-size: 15px;
+                    }
+
+                    .button {
+                        .shop-now {
+                            width      : 106px;
+                            margin-left: 35%
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+
     .footer {
 
 
