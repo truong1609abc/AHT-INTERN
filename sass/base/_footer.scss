@@ -1,143 +1,20 @@
-// .footer {
-
-//     background-color: $bg-footer;
-
-//     .container {
-//         padding: 63px 15px;
-
-//         .footer-inner {
-//             .row {
-//                 display  : flex;
-//                 flex-wrap: wrap;
-//                 margin   : 0px 0px;
-
-//                 .footer-col {
-//                     width : 25%;
-//                     margin: 0 50px;
-//                     border: 1px solid white;
-
-//                     .icon-bot {
-//                         padding-top: 50px;
-//                     }
-
-//                     h4 {
-//                         font-size     : 16px;
-//                         letter-spacing: 0.04em;
-//                         color         : #f7f7f7;
-//                         font-weight   : 400;
-//                         font-family   : "Montserrat";
-//                         margin        : 0px 0px;
-//                         padding-bottom: 28px;
-//                         border-bottom : 0.5px solid white;
-
-//                     }
-
-//                     p {
-//                         padding    : 10px 0px 0px 0px;
-//                         max-width  : 85%;
-//                         display    : block;
-//                         margin     : 0px 0px;
-//                         font-size  : 14px;
-//                         color      : #888888;
-//                         font-weight: 400;
-//                         font-family: "Open Sans";
-//                     }
-
-//                     &-content {
-//                         display: flex;
-
-//                         li {
-//                             display: block;
-
-//                             line-height: 10px;
-//                             margin     : 0;
-//                             padding    : 10px 0px;
-//                             text-align : left;
-
-//                             color      : #888888;
-//                             font-weight: 400;
-//                             font-family: "Open Sans";
-//                         }
-
-//                         .right {
-//                             border: 1px solid red;
-
-//                         }
-//                     }
-
-//                     .address {
-//                         li {
-//                             font-size: 14px;
-//                             display  : block;
-
-//                             height: 10px;
-
-//                             margin         : 0;
-//                             padding        : 10px 0px;
-//                             justify-content: center;
-
-//                             color      : #888888;
-//                             font-weight: 400;
-//                             font-family: "Open Sans";
-//                         }
-//                     }
-
-//                     &:last-child {
-//                         width       : 20%;
-//                         margin-left : 153px;
-//                         margin-right: 0px;
-//                     }
-
-//                     &:first-child {
-//                         margin-left: 0px;
-//                     }
-//                 }
-//             }
-
-//             .last-page {
-//                 margin-top     : 73px;
-//                 display        : flex;
-//                 justify-content: space-between;
-
-//                 &-left {
-//                     i {
-//                         color: red;
-//                     }
-//                 }
-
-//                 &-right {
-//                     i {
-//                         margin-left: 10px;
-
-//                         &:first-child {
-//                             margin-left: 0px;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
 .footer {
-
     width           : 100%;
     background-color: $text-gray-3;
     color           : $text-gray-2;
     box-sizing      : border-box;
     overflow        : hidden;
 
-
-
     &-main {
+        padding: 48px 0px 20px 0px;
 
 
-        padding: 48px 0;
 
         h4 {
-            color    : $text-white-2;
-            margin   : 0 0 30px 0;
-            font-size: 16px;
+            color        : $text-white-2;
+            margin       : 0 0 30px 0;
+            font-size    : 16px;
+            margin-bottom: -3px;
         }
 
 
@@ -148,48 +25,62 @@
 
         .row {
 
-            justify-content: space-between;
-            font-size      : 14px;
+
+            font-size: 14px;
+
+            margin: 0px 0px;
 
             .about {
                 @include col(29%);
-                padding: 10px;
+                padding: 0px 0px;
 
                 p {
 
                     font-family: 'Open Sans';
 
                     border-top: 1px solid #393939;
-                    margin    : 30px 0 50px 0;
-                    padding   : 30px 0 0 0;
+
+                    padding       : 30px 0 0 0;
+                    margin        : 30px 0 46px 0;
+                    padding       : 20px 0 3px 0;
+                    max-width     : 250px;
+                    line-height   : 22px;
+                    letter-spacing: 0.019em;
 
                 }
 
                 .footer-social {
-                    padding: 0 -15px;
+
 
                     i {
-                        margin: 0 15px;
+                        margin   : 0px 14.2px;
+                        font-size: 16px;
+
+                        &:first-child {
+                            margin-left: 0px;
+                        }
                     }
                 }
 
             }
 
             .navigation {
-                @include col(25%);
+                @include col(33%);
+                margin-left: 44px;
+
 
                 &-group {
                     display        : flex;
-                    justify-content: space-between;
+                    grid-column-gap: 124px;
                     border-top     : 1px solid #393939;
                     margin         : 30px 0 0 0;
-                    padding        : 30px 0 0 0;
+                    padding        : 18px 0 0 0;
 
                     ul {
                         font-family: 'Open Sans';
 
                         li {
-                            margin: 10px 0;
+                            padding: 9px 0px 7px 0;
 
                             a {
                                 color: $text-gray-2;
@@ -209,43 +100,72 @@
             }
 
             .contact {
-                @include col(25%);
+                @include col(22%);
+                margin-left: 112px;
 
                 ul {
                     border-top: 1px solid #393939;
                     margin    : 30px 0 50px 0;
-                    padding   : 30px 0 0 0;
+                    padding   : 20px 0 0 0;
 
                     li {
                         display: block;
-                        margin : 10px 0;
+                        padding: 0px 0px 1px 0px;
+
+
 
                         .icon {
                             margin-left: 5px;
+
                         }
 
                         span {
                             margin-left: 10px;
+                            line-height: 33px
                         }
 
                     }
                 }
             }
         }
-
-
-
-
-
     }
 
+
+
+
+
+
+
     &-copyright {
-        padding   : 30px 0;
+        padding   : 19px 0 22px 0px;
         border-top: 1px solid #393939;
 
 
         .row {
             justify-content: space-between;
+            margin         : 0px 0px;
+            letter-spacing : 0.017em;
+
+            span {
+                font-weight: 400;
+                font-size  : 14px;
+                font-family: "Open Sans";
+                margin-top : 8px;
+            }
+
+            .payment {
+                i {
+                    color       : #888888;
+                    font-size   : 20px;
+                    font-size   : 22px;
+                    margin-right: 1.25px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+            }
         }
     }
+
 }

@@ -237,22 +237,17 @@
 
                                 .nav-item {
                                     margin-left : 28px;
-                                    margin-right: 27px;
+                                    margin-right: 28px;
                                     display     : inline-block;
-
 
                                     a {
 
                                         text-transform: uppercase;
                                         color         : $color-logo;
                                         font-family   : 'Montserrat';
-                                        font-weight   : 900;
+                                        font-weight   : 700;
                                         font-size     : 14px;
-
-
-
-
-
+                                        font-style    : bold;
 
                                         i {
                                             color: $color-logo;
@@ -272,12 +267,33 @@
                                         }
                                     }
 
-
-
                                 }
 
+
+                                .nav-item:nth-child(2) {
+                                    margin-left: 200px;
+                                }
+
+                                .nav-item:nth-child(3) {
+                                    margin-right: 26px;
+                                }
+
+                                .nav-item:nth-child(4) {
+                                    margin-right: 26px;
+                                }
+
+                                .nav-item:nth-child(5) {
+                                    margin-right: 26px;
+                                }
+
+                                .nav-item:nth-child(6) {
+                                    margin-right: 26px;
+                                }
+
+
+
                                 .nav-item:last-child {
-                                    margin-right: 100px;
+                                    margin-right: 87px;
                                 }
                             }
                         }
@@ -292,7 +308,7 @@
                 align-items    : center;
 
                 &-icon {
-                    margin-left: 30px;
+                    margin-left: 34px;
 
 
                     i {
