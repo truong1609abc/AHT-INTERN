@@ -108,21 +108,40 @@
                     margin    : 30px 0 50px 0;
                     padding   : 20px 0 0 0;
 
-                    li {
-                        display: block;
-                        padding: 0px 0px 1px 0px;
 
+
+                    li {
+                        display    : block;
+                        padding    : 0px 0px 1px 0px;
+                        display    : flex;
+                        align-items: baseline;
 
 
                         .icon {
                             margin-left: 5px;
 
+                            &:first-child {
+                                margin-top: -10px;
+                            }
+
                         }
 
-                        span {
+                        a {
+
+                            cursor : pointer;
+                            display: inline-block;
+
                             margin-left: 10px;
                             line-height: 33px;
                             font-size  : 14px;
+                            color      : $text-gray-2;
+
+                            &:hover {
+                                color          : $text-white-2;
+                                text-decoration: underline;
+
+                            }
+
                         }
 
 
