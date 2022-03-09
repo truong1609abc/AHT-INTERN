@@ -11,15 +11,13 @@
             display: none;
 
             span {
-
                 padding-left  : 17px;
                 color         : $color-logo;
-                font-family   : 'Montserrat';
+                font-family   : $main-font;
                 font-weight   : 700;
                 letter-spacing: 0.73em;
                 font-size     : 20px;
             }
-
         }
     }
 }
@@ -29,14 +27,13 @@
 
     .container-fluid {
         background-color: $bg-header;
-        color           : #525252;
+        color           : $text-header-color;
 
         .main-header {
             @include flex();
             padding: 5px 0 5px 0;
 
             box-sizing: border-box;
-
 
             .header-left {
                 display    : flex;
@@ -48,14 +45,13 @@
                 }
 
                 .header-welcome-text {
-                    font-family   : 'Open Sans';
+                    font-family   : $content-font;
                     font-weight   : 400;
                     letter-spacing: 0.014em;
                     margin-left   : 2px;
                     font-size     : 14px;
                     margin-left   : 5px;
                 }
-
             }
 
             .header-mobile-right {
@@ -67,21 +63,16 @@
                     align-items: center;
                     margin     : 0 15px;
 
-
                     &-icon {
-
                         i {
                             margin-right  : 6px;
                             vertical-align: bottom;
                             font-size     : 14px;
-
                         }
-
                     }
 
                     &-text {
-
-                        font-family: 'Open Sans';
+                        font-family: $content-font;
                         font-weight: 400;
                         font-size  : 14px;
                         display    : none;
@@ -94,32 +85,22 @@
 
                 &-item:last-child {
                     margin-right: 0px;
-
                 }
-
-
-
-
             }
         }
-
-
     }
-
 }
 
 .header {
-
     .container-fluid {
         background-color: $bg-header;
-        color           : #525252;
+        color           : $text-header-color;
 
         .main-header {
             @include flex();
             padding: 15px 0 15px 0;
 
             box-sizing: border-box;
-
 
             .header-left {
                 display    : flex;
@@ -131,14 +112,13 @@
                 }
 
                 .header-welcome-text {
-                    font-family   : 'Open Sans';
+                    font-family   : $content-font;
                     font-weight   : 400;
                     letter-spacing: 0.014em;
                     margin-left   : 2px;
                     font-size     : 14px;
                     margin-left   : 5px;
                 }
-
             }
 
             .header-right {
@@ -150,39 +130,27 @@
                     align-items: center;
                     margin     : 0 15px;
 
-
                     &-icon {
-
                         i {
                             margin-right  : 6px;
                             vertical-align: bottom;
                             font-size     : 14px;
                         }
-
                     }
 
                     &-text {
-                        font-family: 'Open Sans';
+                        font-family: $content-font;
                         font-weight: 400;
                         font-size  : 14px;
-
-
                     }
                 }
 
                 &-item:last-child {
                     margin-right: 0px;
                 }
-
-
-
-
             }
         }
-
-
     }
-
 }
 
 .menu {
@@ -207,7 +175,7 @@
                         padding-left: 17px;
                         color       : $color-logo;
 
-                        font-family   : 'Montserrat';
+                        font-family   : $main-font;
                         font-weight   : 700;
                         letter-spacing: 0.73em;
                         font-size     : 20px;
@@ -227,7 +195,7 @@
                                 .nav-title {
                                     display         : none;
                                     background-color: $bg-header;
-                                    color           : white;
+                                    color           : $text-white-color;
                                     line-height     : 80px;
                                     text-transform  : uppercase;
                                     font-size       : 30px;
@@ -243,14 +211,13 @@
                                     a {
                                         text-transform: uppercase;
                                         color         : $color-logo;
-                                        font-family   : 'Montserrat';
+                                        font-family   : $main-font;
                                         font-weight   : 700;
                                         font-size     : 14px;
                                         font-style    : bold;
 
                                         i {
                                             color: $color-logo;
-
 
                                             &:hover {
                                                 text-decoration: none;
@@ -259,20 +226,16 @@
                                         }
 
                                         &:hover {
-                                            color          : red;
+                                            color          : $color-hover-menu;
                                             text-decoration: underline;
                                             transition     : all 0.5s;
                                         }
-
-
                                     }
 
                                     .active {
                                         color: $color-menu;
                                     }
-
                                 }
-
 
                                 .nav-item:nth-child(2) {
                                     margin-left: 200px;
@@ -294,8 +257,6 @@
                                     margin-right: 26px;
                                 }
 
-
-
                                 .nav-item:last-child {
                                     margin-right: 87px;
                                 }
@@ -303,7 +264,6 @@
                         }
                     }
                 }
-
             }
 
             &-right {
@@ -314,22 +274,18 @@
                 &-icon {
                     margin-left: 34px;
 
-
                     i {
                         margin-right  : 30px;
                         color         : $color-logo;
                         font-size     : 24px;
                         line-height   : 22px;
                         vertical-align: middle;
-
                     }
 
                     i:last-child {
                         margin-right: 0px;
                     }
                 }
-
-
 
                 #nav-icon {
                     display: none;

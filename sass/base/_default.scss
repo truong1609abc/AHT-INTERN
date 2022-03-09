@@ -1,15 +1,14 @@
 body {
     margin : 0;
     padding: 0;
-
 }
 
 a {
-    color          : #000;
-    text-decoration: #000;
+    color          : $color-black;
+    text-decoration: $color-black;
 
     &:hover {
-        color          : #000;
+        color          : $color-black;
         text-decoration: underline;
     }
 }
@@ -58,7 +57,7 @@ input {
     &-btn {
         &::after {
             padding-left: 15px;
-            content     : url('../img/caret-down.png');
+            content     : url("img/caret-down.png");
         }
     }
 
@@ -74,5 +73,5 @@ body {
     line-height: 1;
     color      : $main-color;
     margin     : 0 auto;
-    font-family: 'Montserrat';
+    font-family: $main-font;
 }

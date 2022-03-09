@@ -90,7 +90,7 @@ input {
 }
 .dropdown-btn::after {
   padding-left: 15px;
-  content: url("../img/caret-down.png");
+  content: url("img/caret-down.png");
 }
 .dropdown-content {
   display: none;
@@ -101,7 +101,7 @@ input {
 body {
   font-size: 16px;
   line-height: 1;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0 auto;
   font-family: "Montserrat";
 }
@@ -263,7 +263,7 @@ body {
 .menu .container-fluid .navbar-center .menu-bar-inner nav .navbar .nav-title {
   display: none;
   background-color: #222222;
-  color: white;
+  color: #fff;
   line-height: 80px;
   text-transform: uppercase;
   font-size: 30px;
@@ -291,7 +291,7 @@ body {
   transition: all 0.5s;
 }
 .menu .container-fluid .navbar-center .menu-bar-inner nav .navbar .nav-item a:hover {
-  color: red;
+  color: #da3434;
   text-decoration: underline;
   transition: all 0.5s;
 }
@@ -394,7 +394,7 @@ body {
 }
 .main-content .banner-left .banner-left-content .title-special {
   font-size: 30px;
-  color: #000000;
+  color: #000;
   margin-bottom: 15px;
   font-family: "Pacifico";
   font-weight: 700;
@@ -419,8 +419,7 @@ body {
 .main-content .banner-right .banner-child .banner-right-content-content-top {
   position: absolute;
   top: 55%;
-  left: 30px;
-  margin-left: 27px;
+  left: 57px;
   transform: translateY(-70%);
   -webkit-transform: translateY(-70%);
   -moz-transform: translateY(-70%);
@@ -443,10 +442,9 @@ body {
   -moz-transform: translateY(-45%);
   -ms-transform: translateY(-45%);
   -o-transform: translateY(-45%);
-  margin-left: 9px;
   position: absolute;
   top: 49%;
-  left: 30px;
+  left: 39px;
 }
 .main-content .banner-right .banner-child .banner-right-content-content-bot .title-top {
   letter-spacing: 3px;
@@ -464,7 +462,7 @@ body {
   text-align: center;
   background-color: #8262b5;
   font-size: 14px;
-  color: #ffffff;
+  color: #fff;
   width: 105px;
   padding-left: 5px;
   margin-top: 18px;
@@ -483,7 +481,7 @@ body {
 .main-content .listing .content .title-bot-content {
   margin-top: 0px;
   font-size: 24px;
-  color: #000000;
+  color: #000;
   font-weight: 700;
   font-family: "Montserrat";
   text-transform: uppercase;
@@ -527,7 +525,7 @@ body {
   height: 40px;
   position: absolute;
   background-color: #fff;
-  bottom: 6px;
+  bottom: 5px;
   left: 5px;
   cursor: pointer;
   transition: 0.5s;
@@ -541,7 +539,7 @@ body {
   text-transform: uppercase;
 }
 .main-content .listing .main-listing .row .product-col .product-image .add-cart:hover {
-  color: #664c91;
+  color: #8262b5;
   transition: 0s;
 }
 .main-content .listing .main-listing .row .product-col .product-content {
@@ -552,7 +550,7 @@ body {
 }
 .main-content .listing .main-listing .row .product-col .product-content .productName h3 {
   font-size: 14px;
-  color: #000000;
+  color: #000;
   font-weight: 600;
   font-family: "Montserrat";
   margin-top: -3px;
@@ -612,7 +610,7 @@ body {
   margin: 7px 0px 0px 0px;
   font-size: 24px;
   letter-spacing: 2px;
-  color: #000000;
+  color: #000;
   font-weight: 700;
   font-family: "Montserrat";
   text-transform: uppercase;
@@ -647,10 +645,10 @@ body {
   left: 19px;
 }
 .main-content .slider .main-slider .container .slider .list-item-slider .item .imgBx .time-content {
-  border-top: 1px solid white;
-  border-bottom: 2px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-top: 1px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
   text-align: center;
   width: 48px;
   margin: 6px 5px 3px 5px;
@@ -685,7 +683,7 @@ body {
 }
 .main-content .slider .main-slider .container .slider .list-item-slider .item .content-slider .text .title {
   font-size: 16px;
-  color: #000000;
+  color: #000;
   font-weight: 900;
   font-family: "Montserrat";
   cursor: pointer;
@@ -930,7 +928,7 @@ body {
     z-index: 999;
     height: 100vh;
     width: 40vw;
-    background-color: #fff;
+    background-color: #ffffff;
     -webkit-box-shadow: -8px -7px 6px -2px #bbbbbb;
     -moz-box-shadow: -8px -7px 6px -2px #bbbbbb;
     box-shadow: -8px -7px 6px -2px #bbbbbb;
@@ -940,7 +938,7 @@ body {
     position: absolute;
     top: 5px;
     right: 5px;
-    color: white;
+    color: #fff;
   }
   .menu .container-fluid .navbar-center .menu-bar-inner nav .navbar .nav-title {
     display: block;
@@ -999,6 +997,14 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+  }
+  .main-content .slider .container {
+    padding: 0px 0px;
+  }
+}
+@media only screen and (max-width: 1175px) {
+  .menu .container-fluid .navbar-left {
+    margin-left: -15px;
   }
 }
 @media all and (max-width: 1160px) {
@@ -1139,7 +1145,7 @@ body {
     position: absolute;
     top: 5px;
     right: 5px;
-    color: white;
+    color: #fff;
   }
   .menu .container-fluid .navbar-center .menu-bar-inner nav .navbar .nav-title {
     display: block;
@@ -1169,6 +1175,7 @@ body {
     position: absolute;
     top: 105px;
     left: 0px;
+    margin-left: 15px;
   }
   .menu .container-fluid .navbar-right #nav-icon {
     display: inline;
@@ -1217,7 +1224,7 @@ body {
     width: 100%;
   }
   .main-content .banner .banner-right .banner-col .banner-child .banner-right-content-content-top {
-    left: 10%;
+    left: 20%;
   }
   .main-content .banner .banner-right .banner-col .banner-child .banner-right-content-content-top .title-top {
     font-size: 25px;
@@ -1226,7 +1233,7 @@ body {
     font-size: 25px;
   }
   .main-content .banner .banner-right .banner-col .banner-child .banner-right-content-content-bot {
-    left: 10%;
+    left: 15%;
     transform: translateY(-35%);
     -webkit-transform: translateY(-35%);
     -moz-transform: translateY(-35%);
@@ -1303,7 +1310,7 @@ body {
     font-size: 15px;
   }
   .main-content .banner .banner-right .banner-col .banner-child .banner-right-content-content-top {
-    left: 10%;
+    left: 20%;
   }
   .main-content .banner .banner-right .banner-col .banner-child .banner-right-content-content-top .title-top {
     font-size: 15px;
@@ -1312,8 +1319,7 @@ body {
     font-size: 15px;
   }
   .main-content .banner .banner-right .banner-col .banner-child .banner-right-content-content-bot {
-    left: 10%;
-    margin-left: 27px;
+    left: 15%;
   }
   .main-content .banner .banner-right .banner-col .banner-child .banner-right-content-content-bot .title-top {
     font-size: 15px;
@@ -1398,7 +1404,7 @@ body {
     position: absolute;
     top: 5px;
     right: 5px;
-    color: white;
+    color: #fff;
   }
   .menu .container-fluid .navbar-center .menu-bar-inner nav .navbar .nav-title {
     display: block;
