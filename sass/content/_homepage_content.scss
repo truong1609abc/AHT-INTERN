@@ -39,7 +39,17 @@
         &-left {
             @include col(66.66%);
             position: relative;
-
+           
+            .banner-inner{
+                padding-top: calc( 560 / 750 *100% );
+                position: relative;
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                }
+            }
             .banner-left-content {
                 position: absolute;
                 left    : 65.6%;
@@ -70,6 +80,32 @@
                 padding : 15px 0;
                 position: relative;
 
+                .banner-child-inner{
+                        &.inner-1{
+                            position: relative;
+                            padding-top: calc( 200 / 360 *100%);
+                            img{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                            }
+                        }
+               
+                      &.inner-2{
+                          position: relative;
+                          padding-top: calc(331 / 360 *100%);
+                          img{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 100%;
+                        }
+                      }
+                        
+                   
+                    
+                }
                 .banner-right-content-content-top {
                     position: absolute;
                     top     : 55%;
@@ -123,6 +159,9 @@
                         margin-left     : 1px;
                     }
                 }
+
+
+
             }
         }
     }

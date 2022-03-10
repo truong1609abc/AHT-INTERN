@@ -380,6 +380,16 @@ body {
 .main-content .banner-left img {
   width: 100%;
 }
+.main-content .banner-left .banner-inner {
+  padding-top: 74.6666666667%;
+  position: relative;
+}
+.main-content .banner-left .banner-inner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
 .main-content .banner-left .banner-left-content {
   position: absolute;
   left: 65.6%;
@@ -415,6 +425,26 @@ body {
 .main-content .banner-right .banner-child {
   padding: 15px 0;
   position: relative;
+}
+.main-content .banner-right .banner-child .banner-child-inner.inner-1 {
+  position: relative;
+  padding-top: 55.5555555556%;
+}
+.main-content .banner-right .banner-child .banner-child-inner.inner-1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.main-content .banner-right .banner-child .banner-child-inner.inner-2 {
+  position: relative;
+  padding-top: 91.9444444444%;
+}
+.main-content .banner-right .banner-child .banner-child-inner.inner-2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 .main-content .banner-right .banner-child .banner-right-content-content-top {
   position: absolute;
@@ -640,7 +670,7 @@ body {
   width: 60px;
   height: 60px;
   position: absolute;
-  background-color: #A1D1DD;
+  background-color: #a1d1dd;
   top: 21px;
   left: 19px;
 }
@@ -984,7 +1014,7 @@ body {
     padding: 0 15px;
   }
   .main-content .banner .banner-right .banner-col .banner-child .banner-child-inner {
-    height: 100%;
+    padding-top: 55.5555555556%;
   }
   .main-content .banner .banner-right .banner-col .banner-child .banner-child-inner img {
     width: 100%;
@@ -1003,8 +1033,18 @@ body {
   }
 }
 @media only screen and (max-width: 1175px) {
-  .menu .container-fluid .navbar-left {
-    margin-left: -15px;
+  .menu .container-fluid {
+    padding: 0px 0px;
+    padding: 0 15px;
+  }
+
+  .header-mobile .container-fluid {
+    padding: 0px 0px;
+    padding: 0 15px;
+  }
+
+  .header .container-fluid {
+    padding: 0 15px;
   }
 }
 @media all and (max-width: 1160px) {
@@ -1249,11 +1289,12 @@ body {
     padding: 15px 0;
   }
   .main-content .banner .banner-right .banner-col .banner-child .inner-2 {
-    position: unset;
+    position: relative;
+    padding-top: 91.9444444444%;
+    margin-top: 15px;
   }
   .main-content .banner .banner-right .banner-col .banner-child .inner-2 .img-2 {
-    position: unset;
-    padding: 15px 0;
+    position: absolute;
   }
 }
 @media all and (max-width: 633px) {

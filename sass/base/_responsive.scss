@@ -85,7 +85,7 @@
                         padding: 0 15px;
 
                         .banner-child-inner {
-                            height: 100%;
+                            padding-top: calc( 200 /360 * 100%);
 
                             img {
                                 width: 100%;
@@ -118,11 +118,21 @@
 @media only screen and (max-width:1175px) {
     .menu {
         .container-fluid {
-            .navbar {
-                &-left {
-                    margin-left: -15px;
-                }
-            }
+           padding: 0px 0px;
+           padding: 0 15px;
+        }
+    }
+
+    .header-mobile{
+        .container-fluid{
+            padding: 0px 0px;
+            padding: 0 15px;
+        }
+    }
+
+    .header{
+        .container-fluid{
+            padding: 0 15px;
         }
     }
 }
@@ -450,11 +460,12 @@
                         }
 
                         .inner-2 {
-                            position: unset;
-
+                            position:relative;
+                            padding-top: calc( 331 /360 * 100%);
+                            margin-top: 15px;
                             .img-2 {
-                                position: unset;
-                                padding : 15px 0;
+                                position: absolute;
+                               
                             }
                         }
                     }
